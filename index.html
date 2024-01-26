@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Update List</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e8eff1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container for Content */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Header Styles */
+        h1, h2 {
+            color: #0077cc;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 3px solid #0077cc;
+            padding-bottom: 6px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #0077cc;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        li:hover {
+            background: #f1f1f1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Bold Text Styles */
+        b {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .task-image {
+            width: 100%;
+            max-width: 600px; /* Set a maximum width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Makes it a block element */
+            margin: 10px auto; /* Center the image with some space */
+            border-radius: 5px; /* Optional: rounds the corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <h1>Project Update List</h1>
+
+    <h2>Environment Adjustments</h2>
+    <ul>
+        <li><b>Floor Level Adjustment:</b> Modify the floor level setting in Oculus Quest to prevent the player from
+            floating 3 meters in the air. Target height adjustment to around 1.5 meters
+        </li>
+        <li><b>Accident Scene Setup:</b> Replace cones with a warning triangle for accident scenes. Create two placement
+            options for the triangle: on the side of the street at the bicycle lane's yellow marking, and 2 meters from
+            the car. Correct placement is at the crossing before the sidewalk
+        </li>
+        <li><b>Skybox Update:</b> Change the skybox to feature grey clouds for a more realistic atmosphere</li>
+        <li><b>Building Visibility:</b> Decrease the blur effect on buildings by approximately 66% for a clearer
+            environment
+        </li>
+        <li><b>Floor Pattern Enhancement:</b> Increase the floor pattern scale by 200-400% to improve clarity and reduce
+            blurriness
+        </li>
+    </ul>
+
+    <h2>Interaction & Gameplay Enhancements</h2>
+    <ul>
+        <li><b>Interactive Object Highlighting:</b> Add highlighting for selected objects to enhance player interaction
+            <br><img src="https://i.imgur.com/uRvV83I.jpeg" alt="nteractive Object Highlighting"
+                     class="task-image">
+            <img src="https://i.imgur.com/2UATk3r.gif" alt="nteractive Object Highlighting"
+                 class="task-image">
+        </li>
+        <li><b>Custom Hand-Phone Pose in VR:</b> Made a custom pose for holding the phone in the VR environment.
+            Ensure that when the phone is picked up from any angle, it automatically aligns in the virtual hand with the
+            screen facing upwards
+        </li>
+        <li><b>Object Placement Visualization Tool:</b> Implement a tool in to
+            assist us in creating intuitive visual guides for object placement and interaction. This tool
+            enables the quick generation of transparent and emissive duplicates of selected objects, streamlining the
+            process of visualizing and planning object interactions within VR environments
+            <br><img src="https://i.imgur.com/vPLfQI1.jpeg" alt="Object Placement Visualization Tool"
+                     class="task-image">
+        </li>
+        <li><b>Handheld UI:</b> implement a Handheld User Interface for a VR environment to
+            enhance user understanding and facilitate easier navigation
+            <br><img src="https://i.imgur.com/DBwH78o.png" alt="Object Placement Visualization Tool"
+                     class="task-image">
+        </li>
+        <li><b>Teleportation Area Expansion:</b> Allow players to explore more areas, such as going to the glass
+            building or
+            continuing down the street to the next crossing
+        </li>
+        <li><b>Teleportation Control Modification:</b> Investigate the feasibility of using a different button for
+            teleportation to prevent accidental rotation of the view (bind to "B" button on the
+            right controller)
+        </li>
+        <li><b>Scene Rearrangement:</b> Reposition the car and the injured character, placing the car where the
+            character
+            currently is, and the character in front of the car
+        </li>
+        <li><b>Decision-Making Element:</b> Position a cell phone and the first aid kit close to each other near the
+            front of
+            the car. Introduce a decision-making aspect for the player: choosing between calling an ambulance or
+            attending to the injured person first (correct action: call ambulance)
+        </li>
+    </ul>
+
+    <h2>Character Modifications</h2>
+    <ul>
+        <li><b>Injured Character Animation:</b> Change animation to slight chest movement to the injured character for a
+            more natural
+            appearance
+        </li>
+        <li><b>Character Appearance Detail:</b> Add slightly tinted glasses to the injured character to obscure eye
+            details
+        </li>
+    </ul>
+
+    <h2>Audio Improvements</h2>
+    <ul>
+        <li><b>Ambient City Sound:</b> Add city ambient sounds for a more immersive experience</li>
+    </ul>
+</div>
+</body>
+</html>
